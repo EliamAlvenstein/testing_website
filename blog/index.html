@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class ="page gallery-content">
+	{% for post in site.posts %}
+		<div class="gallery-image">
+			<a href="{{post.url}}"><img src="{{post.postImage}}" /></a>			
+		</div>
+	{% endfor %}
+</div>

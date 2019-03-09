@@ -1,0 +1,73 @@
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*TABLETS STYLE*/
+@media (max-width: 1100px) 
+{
+
+	.page_title_link {
+		font-size: 1.6rem;
+	}
+
+	.header-nav a {
+		font-size: 1rem;
+	}
+
+	/*GALLERY STYLES*/
+	.gallery-content {
+		column-count: 2;
+		padding-top: 10vh;
+	}
+
+	/*SINGLE IMAGE STYLES*/
+	.single-post-page{
+	  flex-direction: column;
+	  padding-top: 8vh;
+	}
+
+	.single-post-image{
+	  flex: 1 1 auto;
+	}
+
+	.single-post-meta{
+	  margin-left: 1rem;
+	}
+
+	.single-post-meta p:first-child{
+	  padding-top: 1.5vh;
+	}
+
+	.just-for-mobile {
+		display: flex;
+	}
+
+	.single-post-download-btn {
+		border-radius: 3px;
+	  background-color: #006994;
+	  color: #fffff4;
+	  display: inline-block;
+	  font-family: 'World_Conflict';
+	  font-weight: normal;
+	  font-style: normal;
+	  margin-top: 0rem;
+	  opacity: 0.9;
+	  padding: 15px 0px;
+	  text-decoration: none;
+	}
+
+	.paypal-donate {
+		margin-left: 10vw;
+	}
+}
+
+/*SMARTPHONE STYLES*/
+@media (max-width: 415px)
+{
+	.gallery-content {
+		column-count: 1;
+	}
+}
