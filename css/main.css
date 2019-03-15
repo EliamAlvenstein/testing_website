@@ -33,6 +33,29 @@ body {
 	min-height: 99vh;
 }
 
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;  
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.turn-content{
+  position: relative;
+}
+
+.turn-content p {
+  top: 50%;
+}
+
 .header {
 	background-color: #f9f9f9;
 	display: flex;
@@ -41,19 +64,82 @@ body {
 	width: 100%;
 	z-index: 20;
 }
-
 .header-container {
 	flex: 1 0 auto;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
+}
+.page_title_link {
+    color: #006994;
+    display: inline-block;
+    flex: 1 0 0;
+    font-family: 'World_Conflict';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-left: 2.5vw;
+    line-height: 1;
+    margin-top: 1.0rem;
+    outline: 0;    
+    position: relative;
+    text-decoration: none;
+}
+.page_title_link:hover{
+  color: #0098ae;
+}
+.header-nav{
+	flex: 1 0 0;
+  margin-top: 2vw; 
+  margin-right: 2.5vw;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 3rem;
+}
+.header-nav a {
+    color: #006994;
+    font-family: 'World_Conflict';
+    font-weight: normal;
+    font-style: normal; 
+    font-size: 1.35rem;
+    line-height: 1;    
+    outline:0;
+    text-decoration: none;
+}
+.header-nav a:hover,
+.header-nav a:active{
+  color: #0098ae;
+}
+.header-hr {
+	flex: 1 1 auto;
+}
+.header-hr hr, .footer-hr hr {
+		color: #006994;
+		width: 95vw;
+}
 
+/*MOBILE HEADER MENU*/
+.fa-bars {
+  color: #006994;
+}
+.show-mobile-menu,
+.mobile-menu-check {
+  display: none;
+}
+
+/*
+
+.header{
+    background-color: #f9f9f9;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
 }
 
 .page_title_link {
     color: #006994;
     display: inline-block;
-    flex: 1 0 0;
     font-family: 'World_Conflict';
     font-weight: normal;
     font-style: normal;
@@ -72,78 +158,12 @@ body {
 }
 
 .header-nav{
-	flex: 1 0 0;
-  margin-top: 2rem; 
-  margin-right: 2.5vw;
-}
-
-.header-nav > li {
-  display: inline-block;
-  margin-left: 1em;
-}
-
-.header-nav a {
-    color: #006994;
-    font-family: 'World_Conflict';
-    font-weight: normal;
-    font-style: normal; 
-    font-size: 1.35rem;
-    line-height: 1;
-    margin-left: 2em;
-    outline:0;
-    text-decoration: none;
-}
-
-.header-nav a:hover,
-.header-nav a:active{
-  color: #0098ae;
-}
-
-.hr {
-	flex: 1 1 auto;
-}
-
-.hr hr {
-		color: #006994;
-		width: 95vw;
-}
-
-/*
-
-.header{ check
-    background-color: #f9f9f9;
-    position: fixed;
-    width: 100%;
-    z-index: 20;
-}
-
-.page_title_link { check
-    color: #006994;
-    display: inline-block;
-    font-family: 'World_Conflict';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2.5rem;
-    margin-left: 2.5vw;
-    line-height: 1;
-    margin-top: 1.0rem;
-    outline: 0;    
-    position: relative;
-    text-decoration: none;
-
-}
-
-.page_title_link:hover{ check
-  color: #0098ae;
-}
-
-.header-nav{ check
   float: right; 
   margin-top: 2rem; 
   margin-right: 2.5vw;
 }
 
-.header-nav > li { check
+.header-nav > li {
   display: inline-block;
   margin-left: 1em;
 }
@@ -173,7 +193,6 @@ hr {
 */
 
 /*FOOTER MENU*/
-
 .footer-nav {
     float: right;   
     padding: 0 0.5rem 0 0;
@@ -206,9 +225,10 @@ hr {
 /*PAGE STYLES*/
 .page {
 	font-family: 'Sabon MT Std';
-  	font-size: 1.3em;
+  	font-size: 1.3rem;
   	font-style: normal;
   	font-weight: normal;
+    line-height: 1.4;
   	margin: 0 auto;
  	padding-top: 13vh;
  	max-width: 85vw;
@@ -291,7 +311,8 @@ hr {
 }
 
 /*PRIVACY STYLES*/
-.privacy-content{
+.privacy-content li {
+  margin-left: 2rem;
 }
 
 
@@ -302,11 +323,10 @@ hr {
 
 .mySlides > img {
 	position: relative;
-	height: 84vh;
+	height: 88vh;
 	left: 50%;
-	top: 10vh;
+  top: 5vh;
 	transform: translate(-50%, 0);
-	z-index: 40;
 }
 
 /*Hide the images by default */
@@ -321,7 +341,7 @@ hr {
 	border-radius: 3px 3px 3px 3px;
 	color: #006994;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 1.125rem;
   font-weight: bold;
   padding: 16px;
   position: absolute;
@@ -347,22 +367,12 @@ hr {
 	left: 2.5vw;
 }
 
-/*Contact page*/
-
-.contact-content {
-}
-
-.about-content {  
-}
-
+/*ABOUT STYLES*/
 .about-quotes {
   text-align: center;
   font-size: 1em;
   font-style: italic;
   line-height: 1.7;
-}
-
-.imprint-content {
 }
 
 .mailto {

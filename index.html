@@ -3,7 +3,8 @@ layout: default
 ---
 
 <!-- Slideshow container -->
-<div class="slideshow-container">
+
+<div class="slideshow-container" id="content">
 	{% for post in site.posts%}
 		<div class="mySlides fade">
 			<img src="/images/{{post.title}}" alt="{{post.title}}">

@@ -5,6 +5,7 @@
 	<title>World Conflict Test</title>
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/mobile.css">
@@ -30,12 +31,15 @@
 	})});
 	</script>
 </head>
+
 <body>
 	<header class="header">
 	<div class="header-container">
 		<a href="/index.html" class="page_title_link">For The Love of Quote</a>
 
 		<nav>
+			<input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+			<label for="mobile-menu" class="show-mobile-menu"><i class="fas fa-bars"></i></label>
 			<ul class="header-nav">
 				<li><a href="/">Home</a></li>
 				<li><a href="/blog">Gallery</a></li>
@@ -45,10 +49,17 @@
 		
 	</div>
 		
-	<div class="hr">
+	<div class="header-hr">
 		<hr>
 	</div>
 </header>
+
+	<!-- 
+	<div id="turn">
+		<p class="turn-content">
+			Please turn your device!
+		</p>
+	</div> -->
 	
 	<div class="body-content">
 		<div class="page privacy-content">
@@ -69,7 +80,7 @@
 	<li><h4>a)    Personal data</h4>
 	<p>Personal data means any information relating to an identified or identifiable natural person (“data subject”). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.</p>
 	</li>
-	<li><h4>b) Data subject</h4>
+	<li><h4>b)    Data subject</h4>
 	<p>Data subject is any identified or identifiable natural person, whose personal data is processed by the controller responsible for the processing.</p>
 	</li>
 	<li><h4>c)    Processing</h4>
@@ -249,15 +260,16 @@
 
 
 	<footer class="footer">
-	<div class="hr">
+	<div class="footer-hr">
 		<hr>
 	</div>
 	
 	<ul class="footer-nav">
 		<li><a href="/contact">Contact</a></li>
 		<li><a href="/impressum">Imprint</a></li>
-		<li><a href="/privacy">Privacy notice</a></li>
+		<li><a href="/privacy">Privacy note</a></li>
 	</ul>			
 </footer>
+
 </body>
 </html>
