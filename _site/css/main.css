@@ -128,81 +128,38 @@ h4 {
   display: none;
 }
 
-/*
-
-.header{
-    background-color: #f9f9f9;
-    position: fixed;
-    width: 100%;
-    z-index: 20;
-}
-
-.page_title_link {
-    color: #006994;
-    display: inline-block;
-    font-family: 'World_Conflict';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2.5rem;
-    margin-left: 2.5vw;
-    line-height: 1;
-    margin-top: 1.0rem;
-    outline: 0;    
-    position: relative;
-    text-decoration: none;
-
-}
-
-.page_title_link:hover{
-  color: #0098ae;
-}
-
-.header-nav{
-  float: right; 
-  margin-top: 2rem; 
-  margin-right: 2.5vw;
-}
-
-.header-nav > li {
-  display: inline-block;
-  margin-left: 1em;
-}
-
-.header-nav a {
-    color: #006994;
-    font-family: 'World_Conflict';
-    font-weight: normal;
-    font-style: normal; 
-    font-size: 1.35rem;
-    line-height: 1;
-    margin-left: 2em;
-    outline:0;
-    text-decoration: none;
-}
-
-.header-nav a:hover,
-.header-nav a:active{
-  color: #0098ae;
-}
-
-hr {
-    color: #006994;
-    clear: both;
-    width: 95vw;
-}
-*/
-
 /*FOOTER MENU*/
-.footer-nav {
-    float: right;   
-    padding: 0 0.5rem 0 0;
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.footer-social-nav {
+  flex: 1 1 auto;
+  margin-left: 0.5vw;
+}
+.footer-social-nav > li {
+  display: inline-block;
+  margin-left: 2em;
+}
+.footer-social-nav i {
+  color: #006994;
+  font-size: 1.5rem;
+}
+.footer-social-nav i:hover {
+  color: #0098ae;
 }
 
+.footer-nav {
+    flex: 1 1 auto;   
+    position: absolute;
+    right: 0.5vw;
+    top: 0.3vw;
+}
 .footer-nav > li {
   display: inline-block;
   margin-left: 1em;
 }
-
 .footer-nav a {
     color: #006994;
     font-family: 'World_Conflict';
@@ -211,7 +168,6 @@ hr {
     margin-right: 2em;
     text-decoration: none;
 }
-
 .footer-nav a:hover, 
 .footer-nav a:active{
   color: #0098ae;

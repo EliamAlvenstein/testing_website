@@ -1,13 +1,15 @@
 ---
 layout: default
+title: For the Love of Quote
+description: Inspirational, famous, witty quotes by great people
 ---
 
 <!-- Slideshow container -->
 
 <div class="slideshow-container" id="content">
-	{% for post in site.posts%}
+	{% for post in site.posts %}
 		<div class="mySlides fade">
-			<img src="/images/{{post.title}}" alt="{{post.title}}">
+			<img src="/images/{{post.fileName}}" alt="{{post.title}}">
 		</div>	
 	{% endfor %}
 	
